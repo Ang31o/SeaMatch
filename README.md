@@ -42,7 +42,5 @@ Production files will be placed in the `dist` folder. Then upload those files to
 
 For this game I used following assets:
 
-- [Racing Kit](https://www.kenney.nl/assets/racing-kit)
-- [Low Poly Racing Car](https://free3d.com/3d-model/low-poly-racing-car-22092.html)
-- [Sounds](https://www.zapsplat.com/)
-- [ThreeJS + TypeScript Starter](https://github.com/mayacoda/simple-threejs-typescript-starter)
+- [cartoon-bomb-explosion-effect-collection](https://www.freepik.com/free-vector/cartoon-bomb-explosion-effect-collection_4765907.htm#fromView=search&page=2&position=1&uuid=9faea6ac-fadf-4d65-864c-2b0a06dd5992)
+- [Hand drawn animals element pack](https://www.freepik.com/free-vector/hand-drawn-animals-element-pack_32358089.htm)

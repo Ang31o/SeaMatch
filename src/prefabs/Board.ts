@@ -23,7 +23,7 @@ export default class Board extends PIXI.Container {
     this.addTiles();
     this.addCombinationManager();
     this.removeStartMatches();
-    this.resize(window.innerWidth, window.innerHeight);
+    this.resize(window.innerWidth);
     this.addEventListeners();
   }
 
@@ -229,9 +229,7 @@ export default class Board extends PIXI.Container {
   }
 
   resize(width: number) {
-    if (width < 640) {
-      this.setSize(width);
-    }
+    this.setSize(width < config.board.width ? width : config.board.width);
     this.adjustPosition();
   }
 

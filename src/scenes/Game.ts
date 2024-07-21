@@ -19,8 +19,12 @@ export default class Game extends Scene {
 
   addBackground(): void {
     this.background = new PIXI.Sprite(PIXI.Assets.get("bg"));
-    this.background.width = window.innerWidth;
-    this.background.height = window.innerHeight;
+    this.background.anchor.set(0.5, 1);
+    this.background.position.set(innerWidth / 2, innerHeight);
+    // this.background.scale.set(innerWidth / innerHeight);
+    // this.background.anchor.set(0.5);
+    // this.background.position.set(innerWidth / 2, innerHeight / 2);
+    // this.background.setSize(Math.max(innerWidth, innerHeight));
     this.addChild(this.background);
   }
 
@@ -35,7 +39,10 @@ export default class Game extends Scene {
   }
 
   onResize(width: number, height: number): void {
-    this.background.setSize(Math.max(width, height));
-    this.board.resize(width, height);
+    // this.background.setSize(Math.max(width, height));
+    this.background.position.set(width / 2, height);
+    // this.background.setSize(Math.max(innerWidth, innerHeight));
+    // this.background.position.set(innerWidth / 2, innerHeight / 2);
+    this.board.resize(width);
   }
 }
